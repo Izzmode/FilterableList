@@ -8,36 +8,93 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"
     />
+
+    <link rel="stylesheet" href="style.css" />
     <title>List</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="center-align">Contacts</h1>
-      <input type="text" id="filterInput" placeholder="Search" />
-      <ul id="names" class="collection with-header">
-        <li class="collection-header">
-          <h2>A</h2>
-        </li>
-        <li class="collection-item"><a href="#">Ava</a></li>
-        <li class="collection-item"><a href="#">Alex</a></li>
-        <li class="collection-item"><a href="#">Andrea</a></li>
-        <li class="collection-item"><a href="#">Aragorn</a></li>
+      <div class="row">
+        <div class="col s5 left-align">
+          <h1 class="center-align">Add contacts</h1>
 
-        <li class="collection-header">
-          <h2>B</h2>
-        </li>
-        <li class="collection-item"><a href="#">Bob</a></li>
-        <li class="collection-item"><a href="#">Betty</a></li>
-        <li class="collection-item"><a href="#">Bea</a></li>
-        <li class="collection-item"><a href="#">Belle</a></li>
+          <form>
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" />
+            <label for="contactNumber">Number</label>
+            <input type="tel" id="contactNumber" />
+            <button class="btn black">Add contact</button>
+          </form>
+        </div>
 
-        <li class="collection-header">
-          <h2>C</h2>
-        </li>
-        <li class="collection-item"><a href="#">Charlie</a></li>
-        <li class="collection-item"><a href="#">Carolina</a></li>
-        <li class="collection-item"><a href="#">Carina</a></li>
-      </ul>
+        <div class="col s5 right contacts">
+          <h1 class="center-align">Contacts</h1>
+          <label for="filterInput">Search</label>
+          <input type="text" id="filterInput" />
+          <ul id="names" class="collection with-header">
+            <h2>A</h2>
+            <div class="div-append">
+              <li class="collection-item"><a href="#">Ava</a></li>
+            </div>
+
+            <h2>B</h2>
+            <div class="div-append">
+              <li class="collection-item"><a href="#">Bob</a></li>
+            </div>
+
+            <h2>C</h2>
+            <div class="div-append">
+              <li class="collection-item"><a href="#">Charlie</a></li>
+            </div>
+            <h2>D</h2>
+            <div class="div-append"></div>
+            <h2>E</h2>
+            <div class="div-append"></div>
+            <h2>F</h2>
+            <div class="div-append"></div>
+            <h2>G</h2>
+            <div class="div-append"></div>
+            <h2>H</h2>
+            <div class="div-append"></div>
+            <h2>I</h2>
+            <div class="div-append"></div>
+            <h2>J</h2>
+            <div class="div-append"></div>
+            <h2>K</h2>
+            <div class="div-append"></div>
+            <h2>L</h2>
+            <div class="div-append"></div>
+            <h2>M</h2>
+            <div class="div-append"></div>
+            <h2>N</h2>
+            <div class="div-append"></div>
+            <h2>O</h2>
+            <div class="div-append"></div>
+            <h2>P</h2>
+            <div class="div-append"></div>
+            <h2>Q</h2>
+            <div class="div-append"></div>
+            <h2>R</h2>
+            <div class="div-append"></div>
+            <h2>S</h2>
+            <div class="div-append"></div>
+            <h2>T</h2>
+            <div class="div-append"></div>
+            <h2>U</h2>
+            <div class="div-append"></div>
+            <h2>V</h2>
+            <div class="div-append"></div>
+            <h2>W</h2>
+            <div class="div-append"></div>
+            <h2>X</h2>
+            <div class="div-append"></div>
+            <h2>Y</h2>
+            <div class="div-append"></div>
+            <h2>Z</h2>
+            <div class="div-append"></div>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>

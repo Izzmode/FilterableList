@@ -1,0 +1,33 @@
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    margin-left: 1rem;
+}
+
+body{
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+
+form{
+    background-color: white;
+    height: 50vh;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 18vh;
+    box-shadow: 3px 3px 10px 0px;
+}
+
+#names{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 10px 0px;
+
+}
+
+button{
+    width: 100%;
+}
+
