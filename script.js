@@ -33,7 +33,11 @@ form.addEventListener('submit', e => {
     let contactNumber = form.querySelector('#contactNumber').value.trim();
     letters = document.querySelectorAll('ul h2');
     
+    
     if(contactName === '' || contactNumber === ''){
+        const errorMessage = document.createElement('p');
+        errorMessage.innerText = 'Båda fält måste vara ifyllda.'
+        form.appendChild(errorMessage);
         return
     }
 
