@@ -64,8 +64,8 @@ filterInput.addEventListener('keyup', filterNames);
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    let contactName = form.querySelector('#contactName').value;
-    let contactNumber = form.querySelector('#contactNumber').value;
+    let contactName = form.querySelector('#contactName').value.trim();
+    let contactNumber = form.querySelector('#contactNumber').value.trim();
     letters = document.querySelectorAll('ul h2');
 
     letters.forEach(header => {
@@ -79,11 +79,17 @@ form.addEventListener('submit', e => {
         //skapar a
         const aLink = document.createElement('a');
         aLink.innerText = contactName;
+
+        const phoneNumber = document.createElement('p');
+        phoneNumber.classList.add('phoneNumber');
+        phoneNumber.innerText = contactNumber;
         
         //lägger a-taggen i li
         listItem.appendChild(aLink);
 
-        // tbd fixa bättre append
+        listItem.appendChild(phoneNumber);
+
+        // 
         header.nextElementSibling.appendChild(listItem);
         }
     
@@ -93,4 +99,6 @@ form.addEventListener('submit', e => {
 
 });
 
+
+//tbd - modal? ändra kontaktnamn/telefonnummer?
 
