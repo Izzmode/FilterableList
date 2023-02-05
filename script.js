@@ -6,7 +6,7 @@ let filterValue = filterInput.value.toUpperCase();
 console.log(filterValue);
 
 let ul = document.querySelector('#names');
-let li = ul.querySelectorAll('li.collection-item');
+let li = ul.querySelectorAll('li.list-group-item');
 
 for (let i = 0; i < li.length; i++){
     //hämtar alla a taggar (li.[i] = current iteration)
@@ -72,12 +72,14 @@ form.addEventListener('submit', e => {
         console.log(contactName[0].toUpperCase())
         console.log(header.innerHTML)
         if (header.innerHTML == contactName[0].toUpperCase()){
-                        //skapar Li
+        //skapar Li
         const listItem = document.createElement('li');
-        listItem.classList.add('collection-item');
+        listItem.classList.add('list-group-item');
+        listItem.classList.add('list-group-item-action');
         
         //skapar a
         const aLink = document.createElement('a');
+        aLink.setAttribute('href', '#');
         aLink.innerText = contactName;
 
         const phoneNumber = document.createElement('p');
